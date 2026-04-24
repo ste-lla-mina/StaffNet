@@ -1,16 +1,65 @@
-# React + Vite
+# StaffNet 📱🕒
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**StaffNet** is an integrated School Operations Management system designed to streamline assets tracking and live academic monitoring. Built for efficiency, it bridges the gap between digital administration and physical classroom management.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Key Features
 
-## React Compiler
+### 1. Student Phone Management
+* **Inventory Control:** Digital register for student device storage.
+* **Status Tracking:** Real-time monitoring of borrowed vs. returned devices.
+* **Automatic Overdue Detection:** Visual alerts for devices not returned by the set deadline.
+* **Digital Receipts:** Exportable PDF reports for accountability.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 2. Live Attendance & Timetable Monitor
+* **Real-time Synchronization:** A "Live Status" dashboard that updates every second to show currently ongoing classes.
+* **Dynamic Timetable:** A 5-day interactive grid mapped to specific teachers, subjects, and classrooms.
+* **Attendance Logging:** Simplified "One-Tap" presence marking for teaching staff.
+* **Conflict Prevention:** Smart logic to ensure teachers aren't scheduled in two places at once.
 
-## Expanding the ESLint configuration
+### 3. Analytics Dashboard
+* **Visual Insights:** Pie charts and bar graphs showing device distribution and class-wise borrowing trends.
+* **Staff Overview:** Quick stats on active sessions and total registered users.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+* **Core:** [React.js](https://reactjs.org/) (Component-based architecture)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/) (Utility-first responsive design)
+* **Icons:** [Lucide-React](https://lucide.dev/) (Clean, consistent iconography)
+* **Charts:** [Recharts](https://recharts.org/) (Data visualization)
+* **Reporting:** [jsPDF](https://github.com/parallax/jsPDF) (Client-side PDF generation)
+
+---
+
+## 📦 Installation & Setup
+
+1.  **Clone the repository:**
+    ```bash
+    git clone (https://github.com/ste-lla-mina/StaffNet.git)
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    cd StaffNet
+    npm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+---
+
+## 📁 Project Structure
+
+```text
+src/
+├── assets/             # Images and branding
+├── components/         # Reusable UI modules (Dashboard, Phones, Attendance)
+├── data/               # JSON-based timetable and student records
+├── App.jsx             # Main application logic & routing
+└── index.css           # Global Tailwind configurations
