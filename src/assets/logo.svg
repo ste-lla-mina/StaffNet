@@ -1,0 +1,42 @@
+<svg width="200" height="240" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main shield background -->
+  <path d="M100 20C100 20 160 50 160 110C160 170 100 220 100 220C100 220 40 170 40 110C40 50 100 20 100 20Z" fill="#2e3f5a" stroke="#1a2436" stroke-width="2"/>
+  
+  <!-- Code symbol at top -->
+  <g transform="translate(100, 60)">
+    <!-- Left angle bracket -->
+    <path d="M-15 -10 L-25 0 L-15 10" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right angle bracket -->
+    <path d="M15 -10 L25 0 L15 10" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Vertical line/slash -->
+    <line x1="0" y1="-15" x2="0" y2="15" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Bottom shield section -->
+  <g transform="translate(100, 140)">
+    <!-- Left half with hatching (graduation theme) -->
+    <path d="M-50 0 L-50 50 L0 50 L0 0 Z" fill="#d0d0d0" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Hatching pattern on left -->
+    <line x1="-45" y1="10" x2="-35" y2="20" stroke="#2e3f5a" stroke-width="1.5" opacity="0.5"/>
+    <line x1="-35" y1="10" x2="-45" y2="20" stroke="#2e3f5a" stroke-width="1.5" opacity="0.5"/>
+    <line x1="-45" y1="25" x2="-35" y2="35" stroke="#2e3f5a" stroke-width="1.5" opacity="0.5"/>
+    <line x1="-35" y1="25" x2="-45" y2="35" stroke="#2e3f5a" stroke-width="1.5" opacity="0.5"/>
+    
+    <!-- Graduation cap -->
+    <g transform="translate(-25, 15)">
+      <!-- Cap top -->
+      <ellipse cx="0" cy="0" rx="8" ry="3" fill="#2e3f5a"/>
+      <!-- Cap front -->
+      <path d="M-8 0 L-6 8 L6 8 L8 0 Z" fill="#2e3f5a"/>
+      <!-- Tassel -->
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#2e3f5a" stroke-width="1.5"/>
+    </g>
+    
+    <!-- Right half with text -->
+    <path d="M0 0 L0 50 L50 50 L50 0 Z" fill="#2e3f5a" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- RCA Text -->
+    <text x="25" y="32" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">RCA</text>
+  </g>
+</svg>
