@@ -26,15 +26,12 @@ const AttendanceSection = ({ onBack, onLogout }) => {
 
   return (
     <div className="flex h-screen bg-[#f8fafc] overflow-hidden font-sans text-slate-900 relative">
-      {/* Mobile Sidebar Overlay */}
       {isSidebarOpen && (
         <div 
           className="fixed inset-0 bg-slate-900/20 backdrop-blur-sm z-40 lg:hidden" 
           onClick={() => setIsSidebarOpen(false)}
         />
       )}
-
-      {/* Sidebar */}
       <aside className={`
         fixed inset-y-0 left-0 z-50 w-72 bg-white border-r border-slate-100 flex flex-col shadow-sm transition-transform duration-300 lg:relative lg:translate-x-0
         ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
@@ -77,7 +74,6 @@ const AttendanceSection = ({ onBack, onLogout }) => {
         </div>
       </aside>
 
-      {/* Main Content */}
       <main className="flex-1 overflow-y-auto relative">
         <header className="bg-white/80 backdrop-blur-md border-b border-slate-100 px-6 lg:px-10 py-6 flex justify-between items-center sticky top-0 z-30">
           <div className="flex items-center gap-4">
@@ -125,8 +121,6 @@ const LiveView = ({ currentTime, viewMode, setViewMode }) => {
   const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   const today = dayNames[currentTime.getDay()];
   const nowStr = currentTime.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
-  
-  // Logic to find current sessions from your JSON structure
   const dayData = timetableData.find(d => d.day === today);
   const currentPeriod = dayData ? Object.entries(dayData.schedule).find(([time]) => {
     const [start, end] = time.split('-');
