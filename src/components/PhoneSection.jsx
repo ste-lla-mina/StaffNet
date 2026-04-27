@@ -22,7 +22,7 @@ const PhoneSection = ({ onBack }) => {
   const [formData, setFormData] = useState({ 
     name: '', 
     class: '', 
-    phoneType: 'Mara', 
+    phoneType: 'Phone Type.', 
     reason: 'project', 
     otherReason: '',
     dateBorrowed: new Date().toISOString().split('T')[0],
@@ -138,7 +138,6 @@ const PhoneSection = ({ onBack }) => {
       </aside>
 
       <main className="flex-1 overflow-y-auto px-4 py-6 lg:px-16 lg:py-10">
-        {/* Mobile Header */}
         <div className="flex items-center justify-between mb-8 lg:hidden">
           <button onClick={() => setIsSidebarOpen(true)} className="p-2 bg-white rounded-xl shadow-sm border border-gray-100 text-[#2e5a88]">
             <Menu size={24} />
@@ -146,7 +145,6 @@ const PhoneSection = ({ onBack }) => {
           <img src={LogoImg} alt="Logo" className="w-8 h-8 object-contain" />
         </div>
 
-        {/* Responsive Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8 mb-12">
           <div className="bg-[#2e5a88] p-5 lg:p-8 rounded-[1.5rem] lg:rounded-[2rem] text-white shadow-xl">
             <p className="text-[10px] font-black uppercase tracking-widest opacity-70">Borrowed</p>
@@ -219,7 +217,6 @@ const PhoneSection = ({ onBack }) => {
             </div>
           </div>
 
-          {/* Desktop Table - Hidden on Mobile */}
           <div className="hidden lg:block overflow-x-auto px-6 pb-10">
             <table className="w-full text-left">
               <thead>
@@ -266,7 +263,6 @@ const PhoneSection = ({ onBack }) => {
             </table>
           </div>
 
-          {/* Mobile Stacked List - No Horizontal Scroll */}
           <div className="lg:hidden space-y-4 px-6 pb-10">
             {filteredPhones.map((phone) => {
               const overdue = checkIsOverdue(phone);
@@ -307,7 +303,6 @@ const PhoneSection = ({ onBack }) => {
         </div>
       </main>
 
-      {/* Modals with responsive widths */}
       {(showAddModal || showEditModal) && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[60] p-4 backdrop-blur-sm">
           <div className="bg-white rounded-[2rem] p-8 max-w-md w-full shadow-2xl">
@@ -331,7 +326,6 @@ const PhoneSection = ({ onBack }) => {
         </div>
       )}
 
-      {/* Mobile Sidebar Overlay */}
       {isSidebarOpen && <div className="fixed inset-0 bg-black/20 backdrop-blur-xs z-40 lg:hidden" onClick={() => setIsSidebarOpen(false)} />}
     </div>
   );

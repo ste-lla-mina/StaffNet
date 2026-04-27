@@ -213,7 +213,6 @@ const TicketSection = ({ onBack }) => {
               </div>
             </div>
 
-            {/* Desktop Table - Hidden on Mobile */}
             <div className="hidden lg:block overflow-x-auto">
               <table className="w-full text-left">
                 <thead>
@@ -253,7 +252,6 @@ const TicketSection = ({ onBack }) => {
               </table>
             </div>
 
-            {/* Mobile Stacked List - Hidden on Desktop */}
             <div className="lg:hidden space-y-4">
               {filteredTickets.map((ticket) => (
                 <div key={ticket.id} className="bg-gray-50/50 p-5 rounded-2xl border border-gray-100 flex flex-col gap-4">
