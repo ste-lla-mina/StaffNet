@@ -20,8 +20,6 @@ import LogoImg from '../assets/logo.jpg';
 const Dashboard = ({ onLogout, onSectionClick, userEmail }) => {
   const [showProfile, setShowProfile] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
-  
-  // Helper to turn "john.doe@email.com" into "John Doe"
   const extractName = (email) => {
     if (!email) return "Staff Member";
     return email.split('@')[0]
@@ -43,7 +41,6 @@ const Dashboard = ({ onLogout, onSectionClick, userEmail }) => {
     address: 'Kigali, Rwanda'
   });
 
-  // Update profile if userEmail changes
   useEffect(() => {
     if (userEmail) {
       setProfileData(prev => ({
