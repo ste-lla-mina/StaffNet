@@ -1,5 +1,4 @@
 # StaffNet 📱🕒
-Full project deployed on: http://10.12.72.100:9000/
 
 **StaffNet** is an integrated School Operations Management system designed to streamline assets tracking and live academic monitoring. Built for efficiency, it bridges the gap between digital administration and physical classroom management.
 
